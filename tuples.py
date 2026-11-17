@@ -49,9 +49,11 @@ rows = [
 #
 # Write your code below this line:
 closed = 0;
+total = 0;
 for i in rows:
+    total+=1;
     if i[2]=="Closed":
         print(i[0]+" ("+i[1]+")")
         closed+=1
-print("Closed: "+str(closed))
+print("Closed: "+str(closed)+" of "+str(total))
    
